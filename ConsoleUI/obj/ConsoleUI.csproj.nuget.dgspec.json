@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\90537\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj": {}
+    "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\90537\\source\\repos\\ReCapProject\\Business\\Business.csproj": {
+    "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\90537\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Business\\obj\\",
+        "outputPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\90537\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
+              "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -66,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\90537\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj": {
+    "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
         "projectName": "ConsoleUI",
-        "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+        "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\90537\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\90537\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,14 +93,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\90537\\source\\repos\\ReCapProject\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Business\\Business.csproj"
+              "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Business\\Business.csproj"
               },
-              "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
+              "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -109,6 +113,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -128,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\90537\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\90537\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -151,8 +161,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
+              "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -166,6 +176,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -187,14 +201,14 @@
         }
       }
     },
-    "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\90537\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\90537\\source\\repos\\ReCapProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\90537\\source\\repos\\ENGINDEMIROG\\ReCapProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\90537\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -221,6 +235,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

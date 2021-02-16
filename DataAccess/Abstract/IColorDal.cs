@@ -5,14 +5,8 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface IColorDal
+    public interface IColorDal:ICarDal<Color>
     {
-        List<Color> GetAll();
-
-        void Add(Color color);
-        void Update(Color color);
-        void Delete(Color color);
-
-        List<Color> GetAllById(int ColorId);
+      
     }
 }

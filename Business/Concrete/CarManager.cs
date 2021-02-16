@@ -16,12 +16,23 @@ namespace Business.Concrete
             _carDal = carDal;
 
         }
-        public List<Car> GetAll()
+
+        public void Add(Car car)
         {
-            //iş kodları
-            return _carDal.GetAll();
-                
+            if (car.DailyPrice>0)
+            {
+                _carDal.Add(car);
+            }
+            else
+            {
+                Console.WriteLine("Günlük ücret sıfırdan farklı olmalı.");
+            }
+            
         }
 
+        public List<Car> GetAll()
+        {
+            return _carDal.GetAll();
+        }
     }
 }
