@@ -26,3 +26,5 @@ C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\Business\obj\Debug\netstan
 C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\Business\obj\Debug\netstandard2.0\Business.dll
 C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\Business\obj\Debug\netstandard2.0\Business.pdb
 C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\Business\bin\Debug\netstandard2.0\Core.pdb

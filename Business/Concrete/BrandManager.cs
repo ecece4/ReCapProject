@@ -17,9 +17,10 @@ namespace Business.Concrete
 
         public void Add(Brand brand)
         {
-            if (brand.BrandName.Length>=2)
+            if (brand.BrandName.Length >= 2)
             {
                 _brandDal.Add(brand);
+                Console.WriteLine("Yeni marka eklendi.");
             }
             else
             {
@@ -27,16 +28,32 @@ namespace Business.Concrete
             }
         }
 
+        public void Delete(Brand brand)
+        {
+
+            _brandDal.Update(brand);
+            Console.WriteLine(brand.BrandId
+               + " Numaralı marka silindi.");
+        }
+
         public List<Brand> GetAll()
         {
             return _brandDal.GetAll();
         }
 
-       
 
-        public List<Brand> GetCarsByBrandId(int id)
+
+        public Brand GetBrandByBrandId(int id)
         {
-            return _brandDal.GetAll(p=>p.BrandId==id);
+            return _brandDal.Get(p => p.BrandId == id);
+        }
+
+        public void Update(Brand brand)
+        {
+
+            _brandDal.Update(brand);
+            Console.WriteLine(brand.BrandId
+               + " Numaralı marka güncellendi.");
         }
     }
 }
