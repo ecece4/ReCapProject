@@ -19,5 +19,7 @@ namespace Business.Constants
         public static string ColorAdded = "Renk eklendi!";
         public static string ColorDeleted = "Renk silindi!";
         public static string ColorUpdated = "Renk güncellendi!";
+        public static string NotDelivered = "Üzgünüz. Araba başka bir müşteride.";
+        public static string Rented = " Araba kiralama başarılı.";
     }
 }

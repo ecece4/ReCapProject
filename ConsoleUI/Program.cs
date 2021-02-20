@@ -11,15 +11,18 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarTest();
-           // BrandTest();
+            // CarTest();
+            // BrandTest();
+
+
+            RentalTest();
+
+
+            //var result = rentalManager.Add(rental);
 
 
 
 
-
-
-           
             //Console.WriteLine(brandManager.GetBrandByBrandId(5)); 
 
 
@@ -28,8 +31,30 @@ namespace ConsoleUI
 
 
 
-          
 
+
+        }
+
+        private static void RentalTest()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            var result = rentalManager.GetRentalDetails();
+            Console.WriteLine("Aracın Adı:  Kiralayının Adı ve Soyadı:  Kiralanma Tarihi:   İade Edilme Tarihi: ");
+            Console.WriteLine("--------------------------------------------------------------");
+            if (result.Success == true)
+            {
+                foreach (var rental in result.Data)
+                {
+
+                    Console.WriteLine(rental.CarName + "/ " + rental.FirstName + " " + rental.LastName + "/ "
+                        + rental.RentDate + "/" + rental.ReturnDate);
+
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
 
         private static void BrandTest()
