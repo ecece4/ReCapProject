@@ -11,51 +11,73 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+
             // CarTest();
             // BrandTest();
 
 
-            RentalTest();
+            //RentalTest();
 
 
-            //var result = rentalManager.Add(rental);
+            int carId, customerId;
+            int toReturnCarId, toReturnCustomerId;
+
+            //RentalAddTest(out carId, out customerId, out rentalManager);
+
+
+            RentalUpdateTest(out toReturnCarId, out toReturnCustomerId);
+
+        }
+
+        private static void RentalUpdateTest(out int toReturnCarId, out int toReturnCustomerId)
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            Rental rental1 = new Rental();
+            toReturnCarId = int.Parse(Console.ReadLine());
+            toReturnCustomerId = int.Parse(Console.ReadLine());
+            rental1.CarId = toReturnCarId;
+            rental1.CustomerId = toReturnCustomerId;
+            Console.WriteLine(rentalManager.Update(rental1).Message);
+        }
+
+        private static void RentalAddTest(out int carId, out int customerId, out RentalManager rentalManager)
+        {   
+            rentalManager = new RentalManager(new EfRentalDal());
+            Rental rental = new Rental();
+            carId = int.Parse(Console.ReadLine());
+            customerId = int.Parse(Console.ReadLine());
+            rental.CarId = carId;
+            rental.CustomerId = customerId;
+            rental.RentDate = DateTime.Now;
 
 
 
-
-            //Console.WriteLine(brandManager.GetBrandByBrandId(5)); 
-
-
-
-
-
-
-
-
-
+            Console.WriteLine(rentalManager.Add(rental).Message);
         }
 
         private static void RentalTest()
         {
             RentalManager rentalManager = new RentalManager(new EfRentalDal());
-            var result = rentalManager.GetRentalDetails();
-            Console.WriteLine("Aracın Adı:  Kiralayının Adı ve Soyadı:  Kiralanma Tarihi:   İade Edilme Tarihi: ");
+           var result = rentalManager.GetRentalDetails();
+            Console.WriteLine("Aracın Adı:  Marka:   Renk:  Kiralayının Adı ve Soyadı: "
+                +"Şirket Adı:    Kiralanma Tarihi:   İade Edilme Tarihi: ");
             Console.WriteLine("--------------------------------------------------------------");
             if (result.Success == true)
             {
                 foreach (var rental in result.Data)
                 {
 
-                    Console.WriteLine(rental.CarName + "/ " + rental.FirstName + " " + rental.LastName + "/ "
-                        + rental.RentDate + "/" + rental.ReturnDate);
+                    Console.WriteLine(rental.CarName +" "+rental.Brand+" / " +rental.Color  +" / " 
+                        + rental.FirstName + " " + rental.LastName + "/ " + rental.CompanyName+ "/"
+                        + rental.RentDate + " / " + rental.ReturnDate);
 
                 }
-            }
+        }
             else
             {
                 Console.WriteLine(result.Message);
             }
-        }
+}
 
         private static void BrandTest()
         {

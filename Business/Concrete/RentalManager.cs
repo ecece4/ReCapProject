@@ -16,6 +16,7 @@ namespace Business.Concrete
     {
         IRentalDal _rentalDal;
         
+        
         public RentalManager (IRentalDal rentalDal)
         {
             _rentalDal = rentalDal;
@@ -23,28 +24,32 @@ namespace Business.Concrete
         }
         public IResult Add(Rental rental)
         {
-            using (ReCapContext context=new ReCapContext())
-            {
-                if  (rental.ReturnDate == null)
-                 
-                   
+            RentalDetailDto rentalDetailDto;
+            rentalDetailDto= _rentalDal.GetRentalDetailsByCarId(rental.CarId);
+                if  (rentalDetailDto==null)
                 {
-                    
-                    return new ErrorDataResult<Rental>(Messages.NotDelivered);
-                }
-                else
+                    _rentalDal.Add(rental);
                     return new SuccessDataResult<Rental>(Messages.Rented);
-            }
+
+                    
+                }
+                else if(rentalDetailDto.ReturnDate.Year>2000 && rentalDetailDto.Id>0 )
+                {
+                    _rentalDal.Add(rental);
+                    return new SuccessDataResult<Rental>(Messages.Rented);
+                }
+
+                else
+                    return new ErrorDataResult<Rental>(Messages.NotDelivered);
+
+            
         }
 
-        public IResult Delete(Rental rental)
-        {
-            throw new NotImplementedException();
-        }
+    
 
         public IDataResult<List<Rental>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll());
         }
 
         public IDataResult<List<RentalDetailDto>> GetRentalDetails()
@@ -58,6 +63,25 @@ namespace Business.Concrete
         }
 
         public IResult Update(Rental rental)
+        {
+            RentalDetailDto rentalDetailDto = _rentalDal.GetRentalDetailsByCarId(rental.CarId);
+            rental.CarId = rentalDetailDto.CarId;
+            rental.CustomerId = rentalDetailDto.CustomerId;
+            rental.RentDate = rentalDetailDto.RentDate;
+            rental.ReturnDate = DateTime.Now;
+            rental.Id = rentalDetailDto.Id;
+
+            _rentalDal.Update(rental);
+            return new SuccessResult(Messages.UpdatedSuccess);
+        }
+
+        public IDataResult<RentalDetailDto> GetRentalDetailsByCarId(int id)
+        {
+            return new SuccessDataResult<RentalDetailDto>(_rentalDal.GetRentalDetailsByCarId(id));
+
+        }
+
+        public IResult Delete(Rental rental)
         {
             throw new NotImplementedException();
         }
