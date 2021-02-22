@@ -57,11 +57,11 @@ namespace Business.Concrete
             return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails());
         }
 
-        public IDataResult<Rental> GetRentalsById(int id)
+        public IDataResult<Rental> GetRentalById(int id)
         {
-            throw new NotImplementedException();
-        }
+            return new SuccessDataResult<Rental>(_rentalDal.Get(p => p.Id == id));
 
+        }
         public IResult Update(Rental rental)
         {
             RentalDetailDto rentalDetailDto = _rentalDal.GetRentalDetailsByCarId(rental.CarId);
@@ -83,7 +83,8 @@ namespace Business.Concrete
 
         public IResult Delete(Rental rental)
         {
-            throw new NotImplementedException();
+            _rentalDal.Delete(rental);
+            return new SuccessResult();
         }
     }
 }
