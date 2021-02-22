@@ -30,10 +30,10 @@ namespace DataAccess.Concrete.EntityFramework
                              on c.ColorId equals co.ColorId
                              select new RentalDetailDto
                              {
-                                 Id=r.Id,
-                                 CarId=c.Id,
+                                Id=r.Id,
+                                CarId=c.Id,
                                 CustomerId=m.Id,
-                                 CarName = c.CarName,
+                                CarName = c.CarName,
                               
                                  FirstName = u.FirstName,
                                  LastName = u.LastName,

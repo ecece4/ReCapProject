@@ -29,18 +29,18 @@ namespace Business.Concrete
                 if  (rentalDetailDto==null)
                 {
                     _rentalDal.Add(rental);
-                    return new SuccessDataResult<Rental>(Messages.Rented);
-
+                    return new SuccessResult(Messages.Rented);
+                
                     
                 }
                 else if(rentalDetailDto.ReturnDate.Year>2000 && rentalDetailDto.Id>0 )
                 {
                     _rentalDal.Add(rental);
-                    return new SuccessDataResult<Rental>(Messages.Rented);
+                    return new SuccessResult(Messages.Rented);
                 }
 
                 else
-                    return new ErrorDataResult<Rental>(Messages.NotDelivered);
+                    return new ErrorResult(Messages.NotDelivered);
 
             
         }
