@@ -71,3 +71,15 @@ C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcor
 C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
 C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\90537\source\repos\ENGINDEMIROG\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

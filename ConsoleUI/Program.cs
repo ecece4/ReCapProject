@@ -19,7 +19,7 @@ namespace ConsoleUI
             //RentalTest();
 
 
-            int carId, customerId;
+           // int carId, customerId;
             int toReturnCarId, toReturnCustomerId;
 
             //RentalAddTest(out carId, out customerId, out rentalManager);

@@ -1,5 +1,9 @@
 ﻿    using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -21,17 +25,16 @@ namespace Business.Concrete
 
         }
 
+        [SecuredOperation("admin,car.add")]
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
-            if ((car.DailyPrice>0) || (car.CarName.Length>=3))
-            {
-                _carDal.Add(car);
-                return new SuccessDataResult<Car>(Messages.CarAdded);
-            }
-            else
-            {
-                return new ErrorDataResult<Car>(Messages.CarNameOrDailyPriceInvalid);
-            }
+            ValidationTool.Validate(new CarValidator(), car);
+             _carDal.Add(car);
+            return new SuccessDataResult<Car>(Messages.CarAdded);
+             
+       
+    
            
         }
 

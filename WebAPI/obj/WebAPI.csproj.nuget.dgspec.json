@@ -45,9 +45,33 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -104,15 +128,39 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
@@ -295,6 +343,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
